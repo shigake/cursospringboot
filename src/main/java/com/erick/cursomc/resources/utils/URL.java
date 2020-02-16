@@ -8,12 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class URL {
-	public static List<Integer> decodeIntList(String s){
-		
-		if(s == "") {
-			return new ArrayList<>();
-		}
-		
+	public static List<Integer> decodeIntList(String s){		
 		String[] vet = s.split(",");
 		List<Integer> list = new ArrayList<>();
 		for(int i=0; i< vet.length;i++) {
