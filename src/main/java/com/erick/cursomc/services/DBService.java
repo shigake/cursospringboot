@@ -86,7 +86,7 @@ public class DBService {
 		Cidade c2 = new Cidade(null, "Sao Paulo", est2);
 		Cidade c3 = new Cidade(null, "Campinas", est2);
 		
-		Cliente cli1 = new Cliente(null, "Maria Silva", "maria@gmail.com", "36378912377", TipoCliente.PESSOAFISICA);
+		Cliente cli1 = new Cliente(null, "Maria Silva", "shigake@gmail.com", "36378912377", TipoCliente.PESSOAFISICA);
 		
 		Endereco e1 = new Endereco(null, "Rua flores", "121", "apto 303", "jardim", "38220834", cli1, c1);
 		Endereco e2 = new Endereco(null, "avenida matos", "105", "sala 800", "Centro", "38777012", cli1, c2);
