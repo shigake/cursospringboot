@@ -18,6 +18,7 @@ import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.ObjectMetadata;
+import com.erick.cursomc.services.exceptions.FileException;
 
 @Service
 public class S3Service {
@@ -37,7 +38,7 @@ public class S3Service {
 			String contentType = multipartFile.getContentType();
 			return uploadFile(is, fileName, contentType);
 		} catch (IOException e) {
-			throw new RuntimeErrorException(null, "Erro no inputstream" + e.getMessage());
+			throw new FileException("Erro no inputstream" + e.getMessage());
 		}
 
 	}

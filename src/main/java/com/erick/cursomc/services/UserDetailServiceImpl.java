@@ -11,7 +11,7 @@ import com.erick.cursomc.repositories.ClienteRepository;
 import com.erick.cursomc.security.UserSS;
 
 @Service
-public class UserDefailServiceImpl implements UserDetailsService{
+public class UserDetailServiceImpl implements UserDetailsService{
 
 	@Autowired
 	private ClienteRepository repo;
